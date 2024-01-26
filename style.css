@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('/assets/font-family/AbrilFatface-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/font-family/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+#banniere {
+    background-color: #E3E0D4;
+    display: flex;
+}
+
+#liste-1 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 15%;
+
+}
+
+#banniere li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#img-telephone {
+    width: 1.5em;
+}
+
+#icon-telephone {
+    margin-right: 2%;
+}
+
+#icon-mail {
+    margin-right: 2%;
+    margin-left: 2.5%;
+}
+
+#liste-2 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 15%;
+}
+
+#icon-facebook {
+    margin-right: 2%;
+}
+
+#img-facebook {
+    width: 1.5em
+}
+
+#img-instagram {
+    width: 1.5em
+}
+
+#banniere-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+#img-salon {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 50%;
+    width: 5%;
+
+}
+
+#banniere-2 ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+#banniere-2 ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 20px 30px;
+    /* Augmente le padding à gauche et à droite */
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #000000;
+}
+
+#banniere-2 ul a:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+#banniere-2 ul li a {
+    margin-right: 30px;
+}
+
+#content-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#sidebar-1 {
+    background-image: url(/assets/images/devanture-salon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+
+#content-sidebar-2 {
+    margin-left: 20%;
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+    font-size: 3.5em;
+    letter-spacing: 5px;
+
+}
+
+#content-sidebar-2 p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    width: 80%;
+    line-height: 1.5;
+}
+
+#content-sidebar-2 a {
+    font-family: "Montserrat";
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #CCC7B1;
+    padding-bottom: 3px;
+    transition: color 0.3s, transform 0.3s, border-color 0.3s;
+    display: inline-block;
+}
+
+#content-sidebar-2 a:hover,
+a:focus {
+    color: #CCC7B1;
+    /* Nouvelle couleur de texte au survol */
+    transform: scale(1.1);
+    /* Agrandit le texte */
+    border-bottom-color: rgb(139, 136, 136);
+    /* Nouvelle couleur de soulignement au survol */
+}
+
+.carousel-images img {
+    height: 210px;
+    width: 400px;
+    margin-right: 0.1%;
+    flex: 0 0 auto;
+    transition: transform 0.5s ease;
+    /* width: 100%; */
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.carousel-images {
+    display: flex;
+    width: calc(100% *6);
+}
+
+#container-notre-salon {
+    background-color: #8D8D8D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Abril Fatface';
+    letter-spacing: 4px;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+#container-notre-salon p {
+    color: #ffffff;
+    text-align: center;
+    width: 30%;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#container-notre-salon a {
+    border: 5px solid rgb(116, 114, 114);
+    padding: 10px;
+    border-radius: 80px;
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 3px;
+    margin-bottom: 33px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#container-notre-salon a:hover {
+    color: #CCC7B1;
+    /* Nouvelle couleur de texte au survol */
+    transform: scale(1.1);
+    /* Agrandit le texte */
+}
+
+#container-prestation {
+    margin-top: 0;
+    background-color: #DDDDD9;
+    text-align: center;
+    height: 180px;
+}
+
+#container-prestation h2 {
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+#container-prestation p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8b8a88;
+}
+
+#section-prestation {
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F3;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card img:hover {
+    transform: scale(0.925)
+}
+
+.card .text {
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    right: 15px;
+    height: 250px;
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+    border: 1px solid rgb(201, 166, 84);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .text h3 {
+    font-weight: 800;
+    font-size: 22px
+}
+
+.card .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(201, 166, 84);
+
+}
+
+.card .btn:hover {
+    color: rgb(201, 166, 84);
+}
+
+#section-rendez-vous {
+    background-image: url(/assets/images/personne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#section-rendez-vous p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600
+}
+
+#section-rendez-vous a {
+    text-decoration: none;
+    color: #CCC7B1;
+}
