@@ -166,13 +166,10 @@ a:focus {
     /* Nouvelle couleur de soulignement au survol */
 }
 
-.carousel-images img {
+.carousel-track img {
     height: 210px;
     width: 400px;
     margin-right: 0.1%;
-    flex: 0 0 auto;
-    transition: transform 0.5s ease;
-    /* width: 100%; */
 }
 
 .carousel {
@@ -182,9 +179,26 @@ a:focus {
     margin-bottom: 30px;
 }
 
-.carousel-images {
+.carousel-track {
     display: flex;
-    width: calc(100% *6);
+    width: calc(100% * 12);
+    animation: scroll 70s linear infinite;
+    /* Ajustez le temps selon vos besoins */
+}
+
+.carousel-image {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% / 6));
+    }
 }
 
 #container-notre-salon {
@@ -341,4 +355,39 @@ h2 {
 #section-rendez-vous a {
     text-decoration: none;
     color: #CCC7B1;
+}
+
+#footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer img {
+    width: 10%;
+    border-radius: 80px;
+}
+
+#footer h4 {
+    color: rgb(201, 166, 84);
+}
+
+#footer ul li {
+    width: 60%;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer p {
+    color: white;
+}
+
+hr {
+    width: 7%;
+    color: rgb(201, 166, 84);
 }
