@@ -117,7 +117,7 @@ body {
 }
 
 #sidebar-1 {
-    background-image: url(/assets/images/devanture-salon.png);
+    background-image: url(/assets/images/devanture-n&b.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -357,21 +357,100 @@ h2 {
     color: #CCC7B1;
 }
 
+#container-horaire {
+    background-image: url(/assets/images/cheveux-femme.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    height: 400px;
+    position: absolute;
+    bottom: -2050px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
+}
+
+
+#nos-horaires{
+    background-color: rgb(196,187,168, 0.9);
+    width: 70%;
+    height: 350px;
+    text-align: center;
+}
+
+#nos-horaires h4{
+    font-family: 'Abril Fatface';
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.jours{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.heure{
+    font-size: 18px;
+}
+
+#rdv p {
+    font-size: 26px;
+    font-weight: 700;
+    width: 60%;
+    text-align: center;
+}
+
+
 #footer {
+    margin-top: 20%;
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 25%);
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding: 150px;
+    position: relative;
+    z-index: 1
 }
 
 #footer img {
     width: 10%;
     border-radius: 80px;
+    margin-top: 2%;
+    display: flex;
+}
+
+#footer p {
+    width: 80%;
+    margin: 2 auto;
+    line-height: 1.5;
 }
 
 #footer h4 {
     color: rgb(201, 166, 84);
+    margin-bottom: 0;
+    justify-self: center;
+}
+
+#footer ul {
+    padding: 0;
+    /* Supprimez le padding par défaut */
+    list-style-type: none;
+    /* Enlève les puces */
+    margin-top: 0;
+    /* Alignez le haut de la liste avec le h4 */
+    justify-self: center;
+    /* Centre la liste horizontalement */
+    line-height: 2;
 }
 
 #footer ul li {
@@ -390,4 +469,18 @@ h2 {
 hr {
     width: 7%;
     color: rgb(201, 166, 84);
+}
+
+#banniere-footer{
+    display: flex;
+    background-color: #CCC7B1;
+    justify-content: center;
+}
+
+#banniere-footer a {
+    text-decoration: none;
+    color: grey;
+}
+#banniere-footer a:hover {
+    opacity:0.8
 }
